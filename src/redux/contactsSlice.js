@@ -1,7 +1,7 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 // import { nanoid } from 'nanoid';
 import { persistReducer } from 'redux-persist';
-import persistStore from 'redux-persist/es/persistStore';
+// import persistStore from 'redux-persist/es/persistStore';
 import storage from 'redux-persist/lib/storage';
 
 const contactsInitialState = {
@@ -42,4 +42,4 @@ export const store = configureStore({
   },
 });
 
-export const persistor = persistStore(store);
+export const persistedReducer = persistReducer(persistConfig, contactsReducer);

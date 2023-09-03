@@ -4,6 +4,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { persistedReducer } from './contactsSlice';
 import { filterReducer } from './filterSlice';
+import persistStore from 'redux-persist/es/persistStore';
 
 export const store = configureStore({
   reducer: {
@@ -15,7 +16,7 @@ export const store = configureStore({
 });
 
 
-
+export const persistor = persistStore(store);
 
 // import { configureStore, createSlice } from '@reduxjs/toolkit';
 // import { persistReducer, persistStore } from 'redux-persist';
