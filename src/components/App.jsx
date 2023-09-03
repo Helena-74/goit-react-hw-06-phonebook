@@ -1,11 +1,10 @@
 import React from 'react';
-
-import ContactForm from './ContactForm/ContactForm';
-import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store } from 'redux/store';
+import ContactForm from './ContactForm/ContactForm';
+import ContactList from './ContactList/ContactList';
 
 function App() {
   return (
