@@ -1,7 +1,7 @@
 import ContactItem from 'components/ContactItem/ContactItem';
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/store';
+import { deleteContact } from 'redux/contactsSlice';
 // import ContactItem from '../ContactItem/ContactItem';
 
 
